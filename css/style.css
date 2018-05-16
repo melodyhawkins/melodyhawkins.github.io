@@ -123,6 +123,7 @@
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
+  border-bottom: none;
 }
 #projects img{
   width: 500px;
@@ -175,11 +176,14 @@ address p{
   padding-left: 5em;
 }
 .smicons{
-  padding-top: 2em;
+  padding-top: .5em;
+  font-size: 1.5em;
+  padding-bottom: .5em;
 }
 .smicons a{
   color:#FFF;
-  padding-left: 5em;
+  padding-left: 4em;
+  text-decoration: none;
 }
 .fa-twitter,
 .fa-facebook,
