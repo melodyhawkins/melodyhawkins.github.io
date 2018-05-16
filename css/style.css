@@ -1,0 +1,222 @@
+/*---LOGO----*/
+.navbar-default .navbar-brand{
+  font-family: 'Lobster', cursive;
+  color:#FFd700;
+  text-shadow: 1px 1px 2px #0a0a0a;
+  font-weight: 700;
+  font-size: 4em;
+  height: 1em;
+  border: 1px solid #FFF;
+  animation-name: logo;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes logo{
+  to{transform: rotateY(360deg);}
+}
+/*---NAVBAR---*/
+.navbar-default{
+  background-color: transparent;
+  border-color: transparent;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover{
+  color: #fff;
+  background-color: rgba(17, 17, 17, .5);
+}
+.navbar-default .navbar-nav>li>a{
+  color: #fff;
+  text-shadow: 1px 1px 2px #0a0a0a;
+}
+.navbar-default .navbar-nav>li>a:hover{
+  color:#FFd700;
+  background-color: rgba(17, 17, 17, .5);
+}
+/*----JUMBOTRON-----*/
+.jumbotron{
+  background-image: url('../img/jumbotron/glowworm.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.jumbotron h1{
+  font-family: 'Lobster',cursive;
+  font-weight: 700;
+  font-size: 4em;
+  padding-right: 1em;
+  margin-top: -.2em;
+}
+.jumbotron h3{
+  padding-right: 2em;
+}
+.jumbotron h4{
+  padding-right: 2.5em;
+  padding-bottom: 2em;
+}
+
+/*----CAROUSEL-----*/
+.first-slide{
+  background-image: url("../img/carousel/1.jpg");
+  background-size: cover;
+}
+.slide-logo{
+  max-height: 300px;
+}
+.carousel-caption{
+  padding-bottom: 50px;
+}
+.carousel-inner .item{
+  height: 105vh;
+  background-size: cover;
+  background-position: center;
+}
+.second-slide{
+  background-image: url('../img/carousel/2.png');
+  background-size: contain;
+  background-position: center;
+}
+.third-slide{
+  background-image: url('../img/carousel/3.jpg');
+}
+.btn-primary,
+.btn-primary:hover{
+  background-color: #FFd700;
+  border-color: #FFd700;
+}
+/*----MY STORY----*/
+#my_story{
+  min-height: 600px;
+  display:flex;
+  align-items: center;
+}
+#my_story h1{
+  font-family: 'Lobster', cursive;
+  color:#FF33cc;
+  font-size: 6em;
+  text-shadow: 1px 1px 5px #0A0A0A;
+}
+#my_story p{
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 1.1em;
+  color: #555555;
+}
+#my_story h3{
+  color: #555555;
+  font-family:'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  margin-top: 0;
+}
+/*--END MY STORY--*/
+#projects{
+  background-color: #555555;
+  background-size: cover;
+  min-height: 600px;
+}
+#projects h1, h3, p{
+  color: #FFd700;
+}
+#projects a{
+  color: #FFd700;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#projects img{
+  width: 500px;
+  height: 500px;
+}
+#projects .tab-pane .row{
+  margin: 0;
+}
+#projects .tab-content .food{
+  background-color: #fff;
+  padding:10px;
+}
+/*--CONTACT--*/
+#contact{
+  background-color: #FF33cc;
+  background-size: cover;
+  min-height: 600px;
+  color: #FFF;
+  padding-bottom:  50px;
+}
+#contact h1{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 4em;
+  margin-top: 50px;
+}
+#contact p{
+  color: #fff;
+}
+
+#contact form{
+  background-color: #555555;
+  border: 1px solid #fff;
+  padding: 15px;
+}
+#contact .form-group span{
+  color: #FF0D06;
+}
+address p{
+  color:#FFF;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  padding-left: 4em;
+}
+.red-astrix{
+  color:#FF0D06;
+}
+.map{
+  padding-left: 5em;
+}
+.smicons{
+  padding-top: 2em;
+}
+.smicons a{
+  color:#FFF;
+  padding-left: 5em;
+}
+.fa-twitter,
+.fa-facebook,
+.fa-linkedin,
+.fa-instagram{
+    transition: color 0.5s;
+    border: none;
+}
+.fa-twitter:hover{
+    color:#55acee;
+    position: relative;
+    animation-name: twitter;
+    animation-duration: 3s;
+}
+@keyframes twitter {
+    0%   {background-color:#55acee; right:0px; top:0px;}
+    100% {background-color:#fff; right:0px; top:0px;}
+}
+
+.fa-facebook:hover{
+    color:#3b5998;
+    position: relative;
+    animation-name: facebook;
+    animation-duration: 3s;
+}
+@keyframes facebook {
+    0%   {background-color:#3b5998; right:0px; top:0px;}
+    100% {background-color:#fff; right:0px; top:0px;}
+}
+
+.fa-linkedin:hover{
+    color: #007bb5;
+    position: relative;
+    animation-name: linkedin;
+    animation-duration: 3s;
+}
+@keyframes linkedin {
+    0%   {background-color:#007bb5; left:0px; top:0px;}
+    100% {background-color:#fff; left:0px; top:0px;}
+}

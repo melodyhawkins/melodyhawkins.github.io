@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Portfolio</title>
-
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+	  <link href="https://fonts.googleapis.com/css?family=Lobster|Playfair+Display:700|Raleway:300,400,700" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -17,12 +19,243 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <body data-spy="scroll" data-target="#navbar-example">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-example" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      <a class="navbar-brand logo" href="#">M.A.H</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="#navbar-example">
+      <ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+        <li><a href="#details">Details</a></li>
+        <li><a href="#my_story">My Story</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!--END NAVBAR-->
+<!--START JUMBOTRON-->
+    <div class="jumbotron" id="home">
+      <div class="container text-center">
+        <h1>Melody A. Hawkins</h1>
+        <h3>Web Development & Design</h3>
+        <h4>Making Your Ideas Light Up The World.</h4>
+      </div>
+    </div>
+<!--END JUMBOTRON-->
+<!--START CAROUSEL-->
+  <div class="container-fluid" id="details">
+  	<div class="row">
+  		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  	  <!-- Indicators -->
+  	  <ol class="carousel-indicators">
+  	    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+  	    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+  	    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  	  </ol>
+
+	  <!-- Wrapper for slides -->
+  	  <div class="carousel-inner" role="listbox">
+  	    <div class="item active first-slide">
+  	       <div class="carousel-caption">
+  					 <h1>Web Development</h1>
+             <p>Bringing your ideas to the world.</p>
+  	       </div>
+  	    </div>
+  	    <div class="item second-slide">
+  	      <div class="carousel-caption">
+  	        <h1>Programming Languages</h1>
+  					<p>HTML5 & CSS3.</p>
+  					<a href="#" class="btn btn-lg btn-primary">Learn More</a>
+  	      </div>
+  	    </div>
+  			<div class="item third-slide">
+  			 <div class="carousel-caption">
+  				 <h1>Creative</h1>
+  				 <p>Design and User Experience.</p>
+  				 <a href="#" class="btn btn-lg btn-primary">Browse Gallery</a>
+  			 </div>
+  		 </div>
+	  </div>
+
+	  <!-- Controls -->
+  	  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+  	    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+  	    <span class="sr-only">Previous</span>
+  	  </a>
+  	  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+  	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+  	    <span class="sr-only">Next</span>
+  	  </a>
+  	</div>
+  	</div>
+  </div>
+<!--END CAROUSEL-->
+<!--START MY STORY-->
+<div class="container" id="my_story">
+	<div class="row">
+		<div class="col-md-6">
+			<h1>My Story</h1>
+			<h3>From Lawyer to Web Developer.</h3>
+      <img class="img-responsive" src="img\story\mah.JPG" alt="mah">
+		</div>
+		<div class="col-md-6">
+			<p class="text-justify">I grew up in Fresno and, like most of us, could not wait to leave. Eventually I graduated from UC Davis and after taking a year off, moved to Dallas, Texas to attend law school at Southern Methodist University. I absolutely loved it there. The people, the food, the shopping! But reality set in and I had to start practicing law. Fortunately, I passed both the Texas and California bar exams on the first try. (No joke, I was ready to fly back to Texas if I did not pass the California one). Anyway, I got a great job at a firm in Fresno and hit the ground running. I made partner after 5 ½ years. Unfortunately, for me, I discovered that I did not enjoy being a lawyer. Even worse, I had no idea what else I wanted to be. So, I continued practicing law, even changing practice areas a few times, and firms a few times, including opening my own. Nothing changed, I simply did not enjoy being a lawyer. So, after some serious thought, and realization that my health needed to take precedence, I decided to take advantage of the blessings my hard work had given me, along with my extremely supportive family, and retire. After about a year, I realized I needed something to fill my days, there was simply no one to play with. One night I was looking through Facebook and Geekwise Academy popped up, Websites for Beginners. I thought why not, it would be neat to learn how to make my own website. So, at around 1 in the morning, I signed up. It was one of the best decisions I have ever made. From the first day of class I have loved it and have never looked back. I look forward to helping you light up the world with your ideas through my skills as a web developer and designer.</p>
+		</div>
+	</div>
+</div>
+<!--END MY STORY -->
+
+<!--START PROJECTS-->
+	<div class="container-fluid" id="projects">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-md-12">
+					<h1>Projects</h1>
+				</div>
+			</div>
+			<div class="row projects-tabs">
+				<div class="col-md-12">
+					<!-- Nav tabs: where you click-->
+				  <ul class="nav nav-tabs nav-justified" role="tablist">
+				    <li role="presentation" class="active"><a href="#Sips, Snacks & Stories" aria-controls="Sips, Snacks & Stories" role="tab" data-toggle="tab">Sips, Snacks & Stories</a></li>
+				    <li role="presentation"><a href="#Pet Store" aria-controls="pet store" role="tab" data-toggle="tab">Pet Store</a></li>
+				    <li role="presentation"><a href="#restaurante" aria-controls="restaurante" role="tab" data-toggle="tab">Restaurante</a></li>
+				  </ul>
+
+				  <!-- Tab panes: where the content lives-->
+				  <div class="tab-content">
+				    <div role="tabpanel" class="tab-pane active" id="sips-snacks-stories">
+				    	<div class="row projects">
+				    		<div class="col-md-4">
+				    			<a href="https://melodyhawkins.github.io/bc1finalproject/"><img src="img/works/thumbs/sips.png" alt="sips-snacks-stories" class="img-responsive img-thumbnail"></a>
+									<h3>Sips, Snacks & Stories</h3>
+									<p class="text-justify">A unique lifestyle restaurant offering craft cocktails and beer along with curated wine and champagne to pair with specialty entrees and desserts while enjoying a classic novel, engaging in a lively discussion or listening to live music.</p>
+				    		</div>
+				    		<div class="col-md-4">
+									<a href="https://melodyhawkins.github.io/pet-store/"><img src="img/works/thumbs/pet-store.png" alt="pet-store" class="img-responsive img-thumbnail"></a>
+									<h3>Pet Store</h3>
+									<p class="text-justify">A lively pet store offering the best food, treats, and toys for your pets. Additionally, if you are looking to add a pet to your family, Pet Store offers adoption services. Finally, to accomplish its goal of offering a full array of services for your pet family members, Pet Store offers veterinary services to ensure that your pets stay happy and healthy.</p>
+				    		</div>
+				    		<div class="col-md-4">
+									<a href="https://melodyhawkins.github.io/restaurante/"><img src="img/works/thumbs/restaurante.png" alt="restaurante" class="img-responsive img-thumbnail"></a>
+									<h3>Restaurante</h3>
+									<p class="text-justify">Offering a true farm to table experience Restaurante serves elegant cuisine straight from the farms of the famed Central Valley of California.</p>
+				    		</div>
+				    	</div>
+				    </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--START CONTACT-->
+    <div class="container-fluid" id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1 class="text-uppercase">Contact Us</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+							<form>
+								<div class="form-group">
+							    <label for="exampleInputName">Name <span>*</span></label>
+							    <input type="text" class="form-control" id="exampleInputName" placeholder="Name">
+							  </div>
+								<div class="form-group">
+							    <label for="exampleInputEmail1">Email <span>*</span></label>
+							    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+							  </div>
+							  <div class="form-group">
+							    <label for="exampleInputSubject">Subject <span>*</span></label>
+							    <input type="text" class="form-control" id="exampleInputSubject" placeholder="Subject">
+							  </div>
+							  <div class="form-group">
+							    <label for="exampleInputMessage">Message <span>*</span></label>
+							    <textarea class="form-control" name="name" rows="6"></textarea>
+							  </div>
+							  <div class="checkbox">
+							    <label>
+							      <input type="checkbox"> I'm not a robot.
+							    </label>
+							  </div>
+							  <button type="submit" class="btn btn-default center-block">Send Message</button>
+								<p class="text-center" id="fine-print">All fields marked
+								<span class="red-astrix">*</span>are mandatory.</p>
+							</form>
+					</div>
+					<div class="col-md-6">
+						<address>
+							<p><b>Melody A. Hawkins</b><br>
+							Web Development & Design <br>
+              10234 N. Anywhere Drive <br>
+              Fresno, CA 93730 <br>
+							P. (559) 250-8245
+            </p>
+          </address>
+					<div class="row map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191.122263546321!2d-119.76172958470177!3d36.88742327993063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8094425eb60f3fc3%3A0x42af16c51b9a74a6!2s10272+N+Millbrook+Ave%2C+Fresno%2C+CA+93730!5e0!3m2!1sen!2sus!4v1526495564604" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+          <div class="row smicons">
+            <a href="#" target="_blank">
+      				<i class="fa fa-twitter"></i>
+      				<span>Twitter</span>
+      			</a>
+      			<br>
+      			<a href="#" target="_blank">
+      				<i class="fa fa-facebook"></i>
+      				<span>Facebook</span>
+      			</a>
+      			<br>
+      			<a href="#" target="_blank">
+      				<i class="fa fa-linkedin"></i>
+      				<span>LinkedIn</span>
+      			</a>
+          </div>
+          <div class="row copy text-center">
+            <p>&copy; 2018 M.A.H, LLC All Rights Reserved.</p>
+          </div>
+          </div>
+				</div>
+			</div>
+		</div>
+
+<!--END CONTACT-->
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+                    if( $(this).attr("href")=="#carousel-example-generic" || $(this).attr("href")=="#Sips, Snacks & Stories" || $(this).attr("href")=="#Pet Store" || $(this).attr("href")=="#Restaurante" || $(this).attr("href")=="#update") return;//These are the exceptions
+                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                            var target = $(this.hash);
+                            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                            if (target.length) {
+                                    $('html,body').animate({
+                                            scrollTop: target.offset().top
+                                    }, 1000);
+                                    return false;
+                            }
+                    }
+            });
+        });
+  </script>
   </body>
 </html>
