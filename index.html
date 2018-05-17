@@ -24,17 +24,11 @@
       <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-example" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      <a class="navbar-brand logo" href="#">M.A.H</a>
+        <a class="navbar-brand logo" href="#">M.A.H</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="#navbar-example">
+    <div id="#navbar-example">
       <ul class="nav navbar-nav navbar-right">
 				<li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
         <li><a href="#details">Details</a></li>
@@ -129,33 +123,35 @@
 			<div class="row projects-tabs">
 				<div class="col-md-12">
 					<!-- Nav tabs: where you click-->
-				  <ul class="nav nav-tabs nav-justified" role="tablist">
-				    <li role="presentation" class="active"><a href="#Sips, Snacks & Stories" aria-controls="Sips, Snacks & Stories" role="tab" data-toggle="tab">Sips, Snacks & Stories</a></li>
-				    <li role="presentation"><a href="#Pet Store" aria-controls="pet store" role="tab" data-toggle="tab">Pet Store</a></li>
-				    <li role="presentation"><a href="#restaurante" aria-controls="restaurante" role="tab" data-toggle="tab">Restaurante</a></li>
-				  </ul>
+				  <div class="row projects-heading">
+            <div class="col-md-4 text-center">
+              <h2>Sips, Snacks & Stories</h2>
+            </div>
+            <div class="col-md-4 text-center">
+              <h2>Pet Store</h2>
+            </div>
+            <div class="col-md-4 text-center">
+              <h2>Restaurante</h2>
+            </div>
+          </div>
 
 				  <!-- Tab panes: where the content lives-->
-				  <div class="tab-content">
-				    <div role="tabpanel" class="tab-pane active" id="sips-snacks-stories">
-				    	<div class="row projects">
-				    		<div class="col-md-4">
-				    			<a href="https://melodyhawkins.github.io/bc1finalproject/"><img src="img/works/thumbs/sips.png" alt="sips-snacks-stories" class="img-responsive img-thumbnail"></a>
-									<h3>Sips, Snacks & Stories</h3>
-									<p class="text-justify">A unique lifestyle restaurant offering craft cocktails and beer along with curated wine and champagne to pair with specialty entrees and desserts while enjoying a classic novel, engaging in a lively discussion or listening to live music.</p>
-				    		</div>
-				    		<div class="col-md-4">
-									<a href="https://melodyhawkins.github.io/pet-store/"><img src="img/works/thumbs/pet-store.png" alt="pet-store" class="img-responsive img-thumbnail"></a>
-									<h3>Pet Store</h3>
-									<p class="text-justify">A lively pet store offering the best food, treats, and toys for your pets. Additionally, if you are looking to add a pet to your family, Pet Store offers adoption services. Finally, to accomplish its goal of offering a full array of services for your pet family members, Pet Store offers veterinary services to ensure that your pets stay happy and healthy.</p>
-				    		</div>
-				    		<div class="col-md-4">
-									<a href="https://melodyhawkins.github.io/restaurante/"><img src="img/works/thumbs/restaurante.png" alt="restaurante" class="img-responsive img-thumbnail"></a>
-									<h3>Restaurante</h3>
-									<p class="text-justify">Offering a true farm to table experience Restaurante serves elegant cuisine straight from the farms of the famed Central Valley of California.</p>
-				    		</div>
-				    	</div>
-				    </div>
+          <div class="row projects">
+            <div class="col-md-4">
+              <a href="https://melodyhawkins.github.io/bc1finalproject/"><img src="img/works/thumbs/sips.png" alt="sips-snacks-stories" class="img-responsive img-thumbnail"></a>
+              <h3>Sips, Snacks & Stories</h3>
+              <p class="text-justify">A unique lifestyle restaurant offering craft cocktails and beer along with curated wine and champagne to pair with specialty entrees and desserts while enjoying a classic novel, engaging in a lively discussion or listening to live music.</p>
+            </div>
+            <div class="col-md-4">
+              <a href="https://melodyhawkins.github.io/pet-store/"><img src="img/works/thumbs/pet-store.png" alt="pet-store" class="img-responsive img-thumbnail"></a>
+              <h3>Pet Store</h3>
+              <p class="text-justify">A lively pet store offering the best food, treats, and toys for your pets. Additionally, if you are looking to add a pet to your family, Pet Store offers adoption services. Finally, to accomplish its goal of offering a full array of services for your pet family members, Pet Store offers veterinary services to ensure that your pets stay happy and healthy.</p>
+            </div>
+            <div class="col-md-4">
+              <a href="https://melodyhawkins.github.io/restaurante/"><img src="img/works/thumbs/restaurante.png" alt="restaurante" class="img-responsive img-thumbnail"></a>
+              <h3>Restaurante</h3>
+              <p class="text-justify">Offering a true farm to table experience Restaurante serves elegant cuisine straight from the farms of the famed Central Valley of California.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -242,8 +238,8 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script>
         $(function() {
-            $('a[href*=#]:not([href=#])').click(function() {
-                    if( $(this).attr("href")=="#carousel-example-generic" || $(this).attr("href")=="#Sips, Snacks & Stories" || $(this).attr("href")=="#Pet Store" || $(this).attr("href")=="#Restaurante" || $(this).attr("href")=="#update") return;//These are the exceptions
+            $('a[href*=\\#]:not([href=\\#])').click(function() {
+                    if( $(this).attr("href")=="#carousel-example-generic") return;//These are the exceptions
                     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
                             var target = $(this.hash);
                             target = target.length ? target : $('[name=' + this.hash.slice(1) +']');

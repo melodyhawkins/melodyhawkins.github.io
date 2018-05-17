@@ -115,7 +115,7 @@
   background-size: cover;
   min-height: 600px;
 }
-#projects h1, h3, p{
+#projects h1, h2, h3, p{
   color: #FFd700;
 }
 #projects a{
