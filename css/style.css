@@ -30,7 +30,7 @@
   text-shadow: 1px 1px 2px #0a0a0a;
 }
 .navbar-default .navbar-nav>li>a:hover{
-  color:#FFd700;
+  color:#FF33cc;
   background-color: rgba(17, 17, 17, .5);
 }
 /*----JUMBOTRON-----*/
@@ -116,7 +116,10 @@
   min-height: 600px;
 }
 #projects h1, h2, h3, p{
-  color: #FFd700;
+  color: #FF33cc;
+}
+#projects h3, p{
+  color:#FFd700;
 }
 #projects a{
   color: #FFd700;
